@@ -11,7 +11,7 @@
 <body>
     <div id="root">
         <!-- Hello World using html -->
-        <!-- <h1>Hello World!</h1> -->
+        <h1>Hello World!</h1>
     </div>
 
     <!-- Hello World using javascript -->
@@ -24,9 +24,11 @@
     </script> -->
 
     <!-- Now in index.js file has react inside it(Injected react throught CDN Links) -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+    <!-- Instead of using CDN Link we are using react from npm -->
 
-    <script src="./App.js"></script>
+    <!-- <script src="./App.js"></script> -->
+    <script type="module" src="./App.js"></script>
 </body>
 </html>
