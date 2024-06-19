@@ -34,3 +34,71 @@
 .nav-list > ul > li > img{
     width: 50px;
 }
+
+.no-margin-padding {
+    margin: 0;
+    padding: 0;
+}
+
+.search-container{
+    padding: 10px;
+}
+
+.rest-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+}
+
+.rest-card{
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.rest-card:hover{
+    cursor: pointer;
+    transform: scale(0.95)
+}
+
+.rest-img{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.rest-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0
+}
+
+.rest-name{
+   margin: 1rem 0rem 0.5rem 0rem;
+   padding: 0;
+}
+
+.rest-rating-time{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+.rest-cuisine{
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    color: #676a6d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rest-address{
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    color: #676a6d;
+}
