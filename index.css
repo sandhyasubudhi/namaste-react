@@ -1,3 +1,7 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
 .app{
     height: max-content;
 }
@@ -7,7 +11,6 @@
     justify-content: space-between;
     align-items: center;
     border: 1px solid grey;
-    /* background-color: black; */
 }
 
 .logo-container{
@@ -95,10 +98,14 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 0 0 5 0;
+    padding: 0
 }
 
 .rest-address{
     margin-bottom: 5px;
     font-size: 1.25rem;
     color: #676a6d;
+    margin: 0;
+    padding: 0
 }
