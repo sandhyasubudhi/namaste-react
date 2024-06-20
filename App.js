@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from './Component/Header/Header'
-import Body from './Component/Body/Body'
-import Footer from './Component/Footer/Footer'
+import Header from './components/Header/Header'
+import Body from './components/Body/Body'
+import Footer from './components/Footer/Footer'
 
 const AppLayout = () => {
   return (
