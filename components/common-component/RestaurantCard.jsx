@@ -2,11 +2,12 @@ import StarsIcon from "@mui/icons-material/Stars";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 const RestaurantCard = (props) => {
-  const { name, rating, time, cuisines, address } = props?.restData;
+  const { name, avgRating, cloudinaryImageId, time, cuisines, areaName } = props?.restData;
   return (
     <div className="rest-card">
+      
       <img
-        src="https://www.thespruceeats.com/thmb/SalyKjzBU-K1Bv-FTFWnbd6ckjY=/2121x1414/filters:fill(auto,1)/GettyImages-639704020-5c4a63ecc9e77c00017bfebf.jpg"
+        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}
         className="rest-img"
       />
       <div className="rest-content">
@@ -15,12 +16,12 @@ const RestaurantCard = (props) => {
           <StarsIcon
             style={{ fontSize: 25, marginRight: "2px", color: "green" }}
           />
-          {rating}
+          {avgRating}
           <FiberManualRecordIcon style={{ fontSize: 10, margin: "0px 5px" }} />
           {time}
         </h2>
         <p className="rest-cuisine">{cuisines}</p>
-        <p className="rest-address">{address}</p>
+        <p className="rest-address">{areaName}</p>
       </div>
     </div>
   );
