@@ -3,7 +3,7 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import { REST_IMG_URL } from "../../utils/commonURLs";
 
 const RestaurantCard = (props) => {
-  const { name, avgRating, cloudinaryImageId, time, cuisines, areaName } =
+  const { name, avgRating,sla, cloudinaryImageId, time, cuisines, areaName } =
     props?.restData;
   return (
     <div className="rest-card">
@@ -16,7 +16,7 @@ const RestaurantCard = (props) => {
           />
           {avgRating}
           <FiberManualRecordIcon style={{ fontSize: 10, margin: "0px 5px" }} />
-          {time}
+          {sla?.slaString}
         </h2>
         <p className="rest-cuisine">{cuisines.join(", ")}</p>
         <p className="rest-address">{areaName}</p>
